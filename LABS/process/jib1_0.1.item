@@ -2,6 +2,8 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -109,4 +111,28 @@
     <routinesParameter id="_6WFvwCs4EeivW8QQXbGy1A" name="TalendStringUtil"/>
     <routinesParameter id="_6V7-wCs4EeivW8QQXbGy1A" name="TalendString"/>
   </parameters>
+  <node componentName="tDotNETRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDotNETRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_STATIC_METHOD" value="false"/>
+    <elementParameter field="CHECK" name="PASS_EXISTING_DATA" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_INSTANCE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="INSTANCE" value="" show="false"/>
+    <elementParameter field="FILE" name="LIBRARY" value="&quot;C:/WINDOWS/system32/ClassLibrary1.dll&quot;"/>
+    <elementParameter field="TEXT" name="CLASS_NAME" value="&quot;ClassLibrary1.Class&quot;"/>
+    <elementParameter field="TEXT" name="METHOD_NAME" value="&quot;SomeMethod&quot;"/>
+    <elementParameter field="TABLE" name="PARAMETERS"/>
+    <elementParameter field="TABLE" name="METHOD_PARAMETERS"/>
+    <elementParameter field="COLUMN_LIST" name="OUTPUT_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="IS_RETURN_NET_OBJ" value="false"/>
+    <elementParameter field="CHECK" name="INSTANTIATE_ON_ROW" value="false"/>
+    <elementParameter field="CHECK" name="IS_VOID_METHOD" value="false"/>
+    <elementParameter field="CHECK" name="STORE_RETURNED_INSTANCE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDotNETRow_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDotNETRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
